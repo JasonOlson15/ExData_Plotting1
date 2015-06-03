@@ -19,3 +19,6 @@ powerConsumptionData <- powerConsumptionData[,c(10,3:9)]
 
 ## Change new Date/Time column heading
 colnames(powerConsumptionData)[1] <- "DateTime"
+
+## Create the histogram plot
+hist(powerConsumptionData$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
